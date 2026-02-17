@@ -327,3 +327,4 @@ Ambas FK tienen `cascadeOnDelete` (borrar proyecto borra sus tareas).
 - **Creado** `schema.md` con ER, tablas `proyectos` y `tareas`, migraciones y modelos Eloquent
 - **Ejecutadas** migraciones `proyectos` y `tareas` en BD
 - **Implementado** CRUD completo de Proyectos: `ProyectoController` (resource), `ProyectoRequest`, Model con scope, 5 vistas (index, create, edit, show, _form), rutas REST en `web.php`, enlace en sidebar
+- **Implementado** CRUD de Tareas anidado bajo Proyectos (shallow nested resource): `TareaController`, `TareaRequest`, Model `Tarea`, 3 vistas (create, edit, _form), rutas shallow en `web.php`. La vista `proyectos/show` funciona como tablero Kanban con acciones inline
